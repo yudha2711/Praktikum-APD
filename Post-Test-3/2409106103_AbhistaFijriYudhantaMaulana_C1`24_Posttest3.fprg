@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106103_AbhistaFijriYudhantaMaulana_C1`24_Posttest3"/>
+        <attribute name="authors" value="ABHISTA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-22 08:09:22 PM"/>
+        <attribute name="created" value="QUJISVNUQTtNU0k7MjAyNC0wOS0yMjswNzozODoyMiBQTTsyMDI4"/>
+        <attribute name="edited" value="QUJISVNUQTtNU0k7MjAyNC0wOS0yMjswODowOToyMiBQTTsxOzIxMzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Uang" type="Integer" array="False" size=""/>
+            <declare name="HargaTiketnya" type="Integer" array="False" size=""/>
+            <declare name="Nama, Hari" type="String" array="False" size=""/>
+            <output expression="&quot;Masukkan Nama Anda&quot;" newline="True"/>
+            <input variable="Nama"/>
+            <output expression="&quot;Membeli Tiket Dihari Apa?&quot;" newline="True"/>
+            <input variable="Hari"/>
+            <output expression="&quot;Berapa Jumlah Uang&quot;" newline="True"/>
+            <input variable="Uang"/>
+            <if expression="Hari == &quot;Senin&quot; or Hari == &quot;Selasa&quot; or Hari== &quot;Rabu&quot; or Hari == &quot;Kamis&quot;">
+                <then>
+                    <if expression="Uang &gt;= 40000">
+                        <then>
+                            <output expression="&quot;Selamat,Pembelian Tiket berhasil! silahkan cek kembali tiket anda&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Maaf uang yang anda miliki tidak cukup,silahkan periksa kembali pemesanan tiket anda dan pastikan uang yang anda miliki cukup&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Hari == &quot;Jumat&quot;">
+                        <then>
+                            <if expression="Uang &gt;= 45000">
+                                <then>
+                                    <output expression="&quot;Selamat,Pembelian Tiket berhasil! silahkan cek kembali tiket anda&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Maaf uang yang anda miliki tidak cukup,silahkan periksa kembali pemesanan tiket anda dan pastikan uang yang anda miliki cukup&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="Hari == &quot;Sabtu&quot;">
+                                <then>
+                                    <if expression="Uang &gt;= 50000">
+                                        <then>
+                                            <output expression="&quot;Selamat,Pembelian Tiket berhasil! silahkan cek kembali tiket anda&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Maaf uang yang anda miliki tidak cukup,silahkan periksa kembali pemesanan tiket anda dan pastikan uang yang anda miliki cukup&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="Hari == &quot;Minggu&quot;">
+                                        <then>
+                                            <if expression="Uang &gt;= 55000">
+                                                <then>
+                                                    <output expression="&quot;Selamat,Pembelian Tiket berhasil! silahkan cek kembali tiket anda&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Maaf uang yang anda miliki tidak cukup,silahkan periksa kembali pemesanan tiket anda dan pastikan uang yang anda miliki cukup&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
